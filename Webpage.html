@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <title>Apply</title>
+  <link rel="stylesheet" type="text/css" href="WebpageStyle.css">
+</head>
+<body>
+<div id="app">
+<form action="submit.php" method="post" id ="app_form">
+  <fieldset>
+    <legend>Student Information:</legend>
+    First Name <input type="text" name="first_name">
+    Last Name <input type="text" name="last_name"><br>
+    Student E-mail <input type="text" name="email"><br>
+    Street Address <input type="text" name="street_address">
+    City <input type="text" name="city">
+    State
+    <select name="state">
+      <option>--</option>
+    	<option value="AL">Alabama</option>
+    	<option value="AK">Alaska</option>
+    	<option value="AZ">Arizona</option>
+    	<option value="AR">Arkansas</option>
+    	<option value="CA">California</option>
+    	<option value="CO">Colorado</option>
+    	<option value="CT">Connecticut</option>
+    	<option value="DE">Delaware</option>
+    	<option value="DC">District of Columbia</option>
+    	<option value="FL">Florida</option>
+    	<option value="GA">Georgia</option>
+    	<option value="HI">Hawaii</option>
+    	<option value="ID">Idaho</option>
+    	<option value="IL">Illinois</option>
+    	<option value="IN">Indiana</option>
+    	<option value="IA">Iowa</option>
+    	<option value="KS">Kansas</option>
+    	<option value="KY">Kentucky</option>
+    	<option value="LA">Louisiana</option>
+    	<option value="ME">Maine</option>
+    	<option value="MD">Maryland</option>
+    	<option value="MA">Massachusetts</option>
+    	<option value="MI">Michigan</option>
+    	<option value="MN">Minnesota</option>
+    	<option value="MS">Mississippi</option>
+    	<option value="MO">Missouri</option>
+    	<option value="MT">Montana</option>
+    	<option value="NE">Nebraska</option>
+    	<option value="NV">Nevada</option>
+    	<option value="NH">New Hampshire</option>
+    	<option value="NJ">New Jersey</option>
+    	<option value="NM">New Mexico</option>
+    	<option value="NY">New York</option>
+    	<option value="NC">North Carolina</option>
+    	<option value="ND">North Dakota</option>
+    	<option value="OH">Ohio</option>
+    	<option value="OK">Oklahoma</option>
+    	<option value="OR">Oregon</option>
+    	<option value="PA">Pennsylvania</option>
+    	<option value="RI">Rhode Island</option>
+    	<option value="SC">South Carolina</option>
+    	<option value="SD">South Dakota</option>
+    	<option value="TN">Tennessee</option>
+    	<option value="TX">Texas</option>
+    	<option value="UT">Utah</option>
+    	<option value="VT">Vermont</option>
+    	<option value="VA">Virginia</option>
+    	<option value="WA">Washington</option>
+    	<option value="WV">West Virginia</option>
+    	<option value="WI">Wisconsin</option>
+    	<option value="WY">Wyoming</option>
+    </select>
+    Zip Code <input type="text" name="zip_code"><br>
+    Birthday (mm/dd/yyyy) <input type="date" name="dob">
+    Age <input type="number" name="age"><br>
+    Race/Ethnicity
+    <select name ="ethinicity">
+      <option>--</option>
+      <option>Hispanic or Latino</option>
+      <option>American Indian or Alaska Native</option>
+      <option>White</option>
+      <option>Asian</option>
+      <option>Black or African American</option>
+      <option>Native Hawaiian or Pacific Islander</option>
+      <option>Two or More Races</option>
+      <option>Other Race</option>
+    </select><br>
+    Gender<br>
+    <input type="radio" name="gender" value="male" checked> Male<br>
+    <input type="radio" name="gender" value="female"> Female<br>
+    <input type="radio" name="gender" value="other">Other<br>
+    T-Shirt Size <select name ="shirt_size">
+      <option>--</option>
+      <option>XS</option>
+      <option>S</option>
+      <option>M</option>
+      <option>L</option>
+      <option>XL</option>
+    </select><br>
+    GPA <input type="number" name="gpa" min="0.00" max="4.00" step="0.01"><br>
+  </fieldset>
+  <fieldset>
+    <legend>Parent Information:</legend>
+    First Name <input type="text" name="first_name">
+    Last Name <input type="text" name="last_name"><br>
+    Parent E-mail <input type="text" name="email"><br>
+    Primary Phone <input type="text" name="home_phone">
+    Secondary Phone <input type="text" name="alternate_phone"><br>
+    Emergency Contact <input type="text" name="emergency_name">
+    Emergency Contact Phone <input type="text" name="emergency_phone"><br>
+  </fieldset>
+  <fieldset>
+    <legend>School Information:</legend>
+    School Name <input type="text" name="school_name">
+    City <input type="text" name="city">
+    State
+    <select name="state">
+      <option>--</option>
+    	<option value="AL">Alabama</option>
+    	<option value="AK">Alaska</option>
+    	<option value="AZ">Arizona</option>
+    	<option value="AR">Arkansas</option>
+    	<option value="CA">California</option>
+    	<option value="CO">Colorado</option>
+    	<option value="CT">Connecticut</option>
+    	<option value="DE">Delaware</option>
+    	<option value="DC">District of Columbia</option>
+    	<option value="FL">Florida</option>
+    	<option value="GA">Georgia</option>
+    	<option value="HI">Hawaii</option>
+    	<option value="ID">Idaho</option>
+    	<option value="IL">Illinois</option>
+    	<option value="IN">Indiana</option>
+    	<option value="IA">Iowa</option>
+    	<option value="KS">Kansas</option>
+    	<option value="KY">Kentucky</option>
+    	<option value="LA">Louisiana</option>
+    	<option value="ME">Maine</option>
+    	<option value="MD">Maryland</option>
+    	<option value="MA">Massachusetts</option>
+    	<option value="MI">Michigan</option>
+    	<option value="MN">Minnesota</option>
+    	<option value="MS">Mississippi</option>
+    	<option value="MO">Missouri</option>
+    	<option value="MT">Montana</option>
+    	<option value="NE">Nebraska</option>
+    	<option value="NV">Nevada</option>
+    	<option value="NH">New Hampshire</option>
+    	<option value="NJ">New Jersey</option>
+    	<option value="NM">New Mexico</option>
+    	<option value="NY">New York</option>
+    	<option value="NC">North Carolina</option>
+    	<option value="ND">North Dakota</option>
+    	<option value="OH">Ohio</option>
+    	<option value="OK">Oklahoma</option>
+    	<option value="OR">Oregon</option>
+    	<option value="PA">Pennsylvania</option>
+    	<option value="RI">Rhode Island</option>
+    	<option value="SC">South Carolina</option>
+    	<option value="SD">South Dakota</option>
+    	<option value="TN">Tennessee</option>
+    	<option value="TX">Texas</option>
+    	<option value="UT">Utah</option>
+    	<option value="VT">Vermont</option>
+    	<option value="VA">Virginia</option>
+    	<option value="WA">Washington</option>
+    	<option value="WV">West Virginia</option>
+    	<option value="WI">Wisconsin</option>
+    	<option value="WY">Wyoming</option>
+    </select>
+    Zip Code <input type="text" name="zip_code"><br>
+  </fieldset>
+  <fieldset>
+    <legend>Essay:</legend>
+    Please tell us about yourself including your interests (academic and non‐academic) as well as why you wish to attend this program. What do you expect out of attending Bulldog Bytes? We are also interested in your plans for college and career. Where do you intend to attend college and what major are you most interested in?<br>
+    <textarea name="student_essay" form="app_form" rows="25" cols="50">Enter text here...</textarea>
+  </fieldset>
+  <input type="submit" value="Submit">
+</form>
+</div>
+</body>
+</html>
